@@ -7,7 +7,8 @@ F = 0
 dF = 5
 
 while F <= 215:
-	C = (F - 30.0)/2.0
-	print "%g %.2f" % (F, C)
+	C = 5.0/9.0*(F - 32.0)
+	C_approx = (F - 30.0)/2.0
+	print "%g %.2f %.2f" % (F, C, C_approx)
 	F = F + dF
 print "----------------"
