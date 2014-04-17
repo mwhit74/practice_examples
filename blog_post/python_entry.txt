@@ -1,0 +1,13 @@
+Practicing with Python
+Programming
+I have been learning a new programming language called Python. It is quite interesting and I am developing some new skills like what you see here. Let me explain, I did not post this entry from the web but from a Python script that accesses this website and posts to it. It is quite interesting really. 
+
+What I have found is that the initial language is quite easy to pick up but learning new modules, which are like libraries in C++, is where things tend to get more complicated. This may have something to do with the fact I am not all that experienced in any language with using outside modules. It may also be that the people who write this nice modules are much better than I am so I spend a good amount of my time trying to figure out what they are doing. 
+
+My Winter Break project was to develop a GUI interface for one of these modules  pyPDF which is a lot like the command line interface PDFTK. I am still working towards this goal. Some of the concepts for creating the GUI are slightly advanced and I didn't not think I was going to spend two (or more) weeks reading books online learning about Python.
+
+It has been fun though, frustrating at times but it keeps me from being bored out of my mind and it is interesting. 
+
+...Python, modules.
+
+-SZ

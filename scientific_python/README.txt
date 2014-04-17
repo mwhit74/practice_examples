@@ -1,0 +1,1 @@
+This folder is location of files created in the study of "A Primer on Scientific Programming with Python" by Hans Petter Langtangen.
