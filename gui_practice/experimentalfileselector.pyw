@@ -94,5 +94,5 @@ class MainWindow(wx.Frame):
 		
 
 app = wx.App(False)
-frame = MainWindow(None, "Experimental Menus")
+frame = MainWindow(None, "Experimental File Selector")
 app.MainLoop()
