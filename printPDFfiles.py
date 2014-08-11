@@ -4,12 +4,16 @@ import time
 
 path = "Y:\\MLW\\"
 
-filename = "Y:\\MLW\\test.txt"
+filename = "C:\Users\mwhitten\Desktop\output.txt"
 
-tempPrinter = "Adobe PDF"
+tempPrinter = "Bluebeam PDF"
 currentPrinter = win32print.GetDefaultPrinter()
 
 win32print.SetDefaultPrinter(tempPrinter)
-win32api.ShellExecute(0, "print", filename, None, ".", 0)
+print '/d:"%s"' % win32print.GetDefaultPrinter()
+try:
+	win32api.ShellExecute(0, "print", filename, '/d:LPT1', ".", 0)
+except win32api.error, info:
+	print info
 time.sleep(5)
 win32print.SetDefaultPrinter(currentPrinter)
