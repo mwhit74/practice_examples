@@ -21,20 +21,22 @@ class MainWindow(wx.Frame):
 		filemenu = wx.Menu()
 		helpmenu = wx.Menu()
 		
-		#Selections from main menu bar
+		#Selections from main menu bar under 'File' heading
 		open = filemenu.Append(wx.ID_OPEN, "&Open", "Select a file to open")
 		#save = filemenu.Append(wx.ID_SAVE, "&Save", "Save the file")
 		saveas = filemenu.Append(wx.ID_SAVEAS, "&Save As", "Save the file as ...")
-		exit = filemenu.Append(wx.ID_EXIT, "&Exit", "Terminate the program")
+		exit = filemenu.Append(wx.ID_EXIT, "&Exit", "Close the program")
 		
+		#Selection from main menu bar under 'Help' heading
 		about = helpmenu.Append(wx.ID_ABOUT, "&About", "Information about this program")
 		
-		#Binding events to selections
+		#Binding events to selections under 'File' heading
 		self.Bind(wx.EVT_MENU, self.OnOpen, open)
 		#self.Bind(wx.EVT_MENU, self.OnSave, save)
 		self.Bind(wx.EVT_MENU, self.OnSaveAs, saveas)
 		self.Bind(wx.EVT_MENU, self.OnExit, exit)
 		
+		#Binding event to selections under 'Help' heading
 		self.Bind(wx.EVT_MENU, self.OnAbout, about)
 		
 		#Creating main menu bar
